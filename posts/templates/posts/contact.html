@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static "posts/contact.css" %}">
+{% endblock css %}
+
+{% block title %}
+Contact
+{% endblock title %}
+{% block body %}
+<header>
+    <h1>Contact Me</h1>
+</header>
+
+<div class="container">
+    <section class="contact-info">
+        <div>
+            <h2>Email</h2>
+            <p><a href="mailto:bt21cse194@iiitn.ac.in">bt21cse194@iiitn.ac.in</a></p>
+        </div>
+
+        <div>
+            <h2>Phone</h2>
+            <p>+91-6204487848</p>
+        </div>
+
+        <div>
+            <h2>Address</h2>
+            <p>Indian Institute of Information Technology, Nagpur Hostel</p>
+            <p>Nagpur, Maharashtra, India</p>
+        </div>
+
+        <div>
+            <h2>Social Media</h2>
+            <p><img width="22" src="{% static "posts/linkdin.jpg" %}"><a href="https://www.linkedin.com/in/gyanbardhan-68794b250/" title="LinkedIn Profile"> LinkedIn</a></p>
+            <p><img width="22" src="{% static "posts/Github.jpeg" %}"><a href="https://github.com/Gyanbardhan" title="Github Profile">GitHub</a></p>
+            <p><img width="22" src="{% static "posts/instagram.png" %}"><a href="https://www.instagram.com/gyanbardhan123/" title="Insta Profile">Instagram</a></p>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Send a Message</h2>
+        <form action="mailto:bt21cse194@iiitn.ac.in" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</div>
+{% endblock body %}

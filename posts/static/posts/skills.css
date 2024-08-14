@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #ebc4c4;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+.skills {
+    margin-bottom: 20px;
+}
+.skills h2 {
+    color: #555;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+.skills li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+.skills li .bar {
+    background-color: #ddd;
+    border-radius: 4px;
+    height: 15px;
+    width: 80%;
+    position: absolute;
+    left: 150px; /* Adjust this value as needed */
+}
+.skills li .bar span {
+    display: block;
+    height: 100%;
+    border-radius: 4px;
+    background-color: #4caf50; /* Default color, can be overridden */
+    width: 0; /* Set to 0 by default, overridden by inline styles */
+}
+.skills li span {
+    flex-grow: 1;
+}
+.languages .bar span { background-color: #4caf50; }
+.technology .bar span { background-color: #2196f3; }
+.frameworks .bar span { background-color: #ff5722; }
+.databases .bar span { background-color: #9c27b0; }
+.tools .bar span { background-color: #ffc107; }

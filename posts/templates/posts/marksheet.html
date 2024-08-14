@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css %}
+{% endblock css %}
+{% block title %}
+Marksheet
+{% endblock title %}
+{% block body %}
+{% if ms == 0 %}
+    <iframe src="{% static 'posts/iiitn.pdf' %}" width="100%" height="700" style="border:1px solid black;"></iframe>
+{% elif ms == 1 %}
+    <iframe src="{% static 'posts/12th.pdf' %}" width="100%" height="700" style="border:1px solid black;"></iframe>
+{% elif ms == 2 %}
+    <iframe src="{% static 'posts/10th.pdf' %}" width="100%" height="700" style="border:1px solid black;"></iframe>
+{% elif ms == 6 %}
+    <iframe src="{% static 'posts/GEN_AI.pdf' %}" width="100%" height="700" style="border:1px solid black;"></iframe>
+{% elif ms == 7 %}
+    <iframe src="{% static 'posts/SQL_.pdf' %}" width="100%" height="700" style="border:1px solid black;"></iframe>
+    {% elif ms == 8 %}
+    <iframe src="{% static 'posts/Statistics.pdf' %}" width="100%" height="700" style="border:1px solid black;"></iframe>
+{% elif ms == 9 %}
+    <iframe src="{% static 'posts/Data_Analysis.pdf' %}" width="100%" height="700" style="border:1px solid black;"></iframe>
+{% endif %}
+{% endblock body %}

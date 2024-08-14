@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static "posts/skills.css" %}">
+{% endblock css %}
+
+{% block title %}
+Skills
+{% endblock title %}
+{% block body %}
+
+<div class="container">
+    <h1>Skills</h1>
+
+    <div class="skills languages">
+        <h2>Languages</h2>
+        <ul>
+            <li>Python <span class="bar"><span style="width: 95%;"></span></span></li>
+            <li>SQL <span class="bar"><span style="width: 95%;"></span></span></li>
+            <li>C <span class="bar"><span style="width: 90%;"></span></span></li>
+            <li>C++ <span class="bar"><span style="width: 90%;"></span></span></li>
+            <li>Java <span class="bar"><span style="width: 75%;"></span></span></li>
+        </ul>
+    </div>
+
+    <div class="skills technology">
+        <h2>Technology</h2>
+        <ul>
+            <li>Generative AI <span class="bar"><span style="width: 90%;"></span></span></li>
+            <li>Machine Learning <span class="bar"><span style="width: 95%;"></span></span></li>
+            <li>Deep Learning <span class="bar"><span style="width: 90%;"></span></span></li>
+            <li>Artificial Intelligence <span class="bar"><span style="width: 75%;"></span></span></li>
+            <li>NLP <span class="bar"><span style="width: 90%;"></span></span></li>
+            <li>RAG <span class="bar"><span style="width: 70%;"></span></span></li>
+            <li>LLM <span class="bar"><span style="width: 80%;"></span></span></li>
+            <li>Data Manipulation <span class="bar"><span style="width: 90%;"></span></span></li>
+            <li>Data Analysis <span class="bar"><span style="width: 85%;"></span></span></li>
+            <li>Statistical Analysis <span class="bar"><span style="width: 80%;"></span></span></li>
+            <li>Data Collection <span class="bar"><span style="width: 75%;"></span></span></li>
+            <li>Data Preprocessing <span class="bar"><span style="width: 85%;"></span></span></li>
+        </ul>
+    </div>
+
+    <div class="skills frameworks">
+        <h2>Frameworks</h2>
+        <ul>
+            <li>TensorFlow <span class="bar"><span style="width: 90%;"></span></span></li>
+            <li>Scikit-Learn <span class="bar"><span style="width: 95%;"></span></span></li>
+            <li>Keras <span class="bar"><span style="width: 90%;"></span></span></li>
+            <li>Hugging Face <span class="bar"><span style="width: 75%;"></span></span></li>
+            <li>Langchain <span class="bar"><span style="width: 85%;"></span></span></li>
+            <li>Streamlit <span class="bar"><span style="width: 95%;"></span></span></li>
+        </ul>
+    </div>
+
+    <div class="skills databases">
+        <h2>Databases</h2>
+        <ul>
+            <li>MySQL <span class="bar"><span style="width: 95%;"></span></span></li>
+            <li>PineCone <span class="bar"><span style="width: 70%;"></span></span></li>
+            <li>Chroma DB <span class="bar"><span style="width: 60%;"></span></span></li>
+        </ul>
+    </div>
+
+    <div class="skills tools">
+        <h2>Tools</h2>
+        <ul>
+            <li>Matplotlib <span class="bar"><span style="width: 85%;"></span></span></li>
+            <li>Seaborn <span class="bar"><span style="width: 85%;"></span></span></li>
+            <li>Jupyter Notebook <span class="bar"><span style="width: 90%;"></span></span></li>
+            <li>Google Colab <span class="bar"><span style="width: 90%;"></span></span></li>
+            <li>VS Code <span class="bar"><span style="width: 95%;"></span></span></li>
+            <li>Kaggle <span class="bar"><span style="width: 90%;"></span></span></li>
+            <li>Microsoft Office <span class="bar"><span style="width: 80%;"></span></span></li>
+            <li>GIT <span class="bar"><span style="width: 75%;"></span></span></li>
+        </ul>
+    </div>
+</div>
+{% endblock body %}

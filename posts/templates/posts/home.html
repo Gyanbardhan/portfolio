@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static "posts/home.css" %}">
+{% endblock css %}
+{% block title %}
+Home
+{% endblock title %}
+{% block body %}
+
+<div class="container">
+    <p >
+        <img src="{% static 'posts/Gyan.png' %}" alt="Gyan" class="float-left">
+        <b class="name">Gyanbardhan</b>
+        
+        <a href="{% url 'resume' %}" class="resume-button" >View Resume</a>
+        
+    <br>
+        I am currently a Computer Science and Engineering student at the Indian Institute of Information Technology, Nagpur, graduating in June 2025. 
+        With a strong background in Machine Learning, Deep Learning, and Generative AI, I have developed a passion for creating innovative solutions 
+        that harness the power of AI. My experience includes projects like Gemini Student, which enhances student learning through AI-driven tools, 
+        and various other machine learning applications. I am proficient in Python, C++, and Java, and have a solid understanding of data structures 
+        and algorithms.<br> <br>
+        I am always eager to learn new technologies and apply them to solve real-world problems. My goal is to contribute to cutting-edge projects 
+        in AI and Machine Learning, and I am currently seeking opportunities where I can grow and make a meaningful impact.
+    </p>
+</div>
+
+<h1 class="work">Work Samples</h1>
+<a href="https://huggingface.co/spaces/gyanbardhan123/Gemeni_Student" target="blank"><h2>Gemeni Student</h2></a>
+<iframe src="https://gyanbardhan123-gemeni-student.hf.space" width="100%" height="500" style="border:1px solid black;">
+</iframe>
+
+<a href="https://sentimentanalysis-dxfez4uqe4xvjdhtrkwvhw.streamlit.app/" target="_blank"><h2>Sentiment Analysis</h2></a>
+<iframe src="https://sentimentanalysis-dxfez4uqe4xvjdhtrkwvhw.streamlit.app/?embedded=true" width="100%" height="500"
+    style="border:1px solid black;">
+</iframe>
+<!-- Add more iframes as needed -->
+</div>
+
+{% endblock body %}

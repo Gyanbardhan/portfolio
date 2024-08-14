@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <style>
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+            width: 100%; /* Make the width of the navigation bar flexible */
+        }
+        
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 0; /* Remove fixed padding to make the width flexible */
+            width: 16.66%; /* Adjust this percentage based on the number of links */
+            box-sizing: border-box; /* Ensure padding doesn't affect width */
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+        
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        footer {
+        background-color: #73a8dc;
+        padding: 5px 0;
+        text-align: center;
+        border-top: 1px solid #e7e7e7;
+        margin-top: 40px;
+        }
+
+        
+
+        
+
+        footer .footer-section h4 {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        footer .footer-section p,
+        footer .footer-section a {
+            color: #aed0ee;
+            text-decoration: none;
+        }
+
+        footer .footer-section p:hover {
+            color: #e0e7ee;
+        }
+
+        footer .social-icons a {
+            margin: 0 5px;
+            color: #507ca2;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        footer .social-icons a:hover {
+            color: #c8d6e6;
+        }
+    </style>
+    {% block css %}{% endblock css %}
+</head>
+<body>
+    <div>
+        <img src={% static "Gyanbardhan.png" %} alt="Gyanbardhan" class="center">
+    </div>
+    <div class="topnav">
+        <a class="active" href="{% url 'home' %}">Home</a>
+        <a href="{% url 'education' %}">Education</a>
+        <a href="{% url 'skills' %}">Skills</a>
+        <a href="{% url 'projects' %}">Project</a>
+        <a href="{% url 'certificates_achievements' %}">Certificates/Achievements</a>
+        <a href="{% url 'contact' %}">Contact</a>
+
+        
+      
+      </div>
+    {% block body %}
+
+    {% endblock body %}
+    <footer>
+    
+        <span class="footer-section">
+            <h3>Contact Information</h3>
+            <p>Email: bt21cse194@iiitn.ac.in</p>
+            <p>Phone: +91 6204487848</p>
+        </span>
+        <span class="footer-section">
+            <h3>Follow Me</h3>
+            <div class="social-icons">
+                <p><img width="15" src="{% static "posts/linkdin.jpg" %}"><a href="https://www.linkedin.com/in/gyanbardhan-68794b250/" title="LinkedIn Profile"> LinkedIn</a>
+                <img width="15" src="{% static "posts/Github.jpeg" %}"><a href="https://github.com/Gyanbardhan" title="Github Profile">GitHub</a>
+                <img width="15" src="{% static "posts/instagram.png" %}"><a href="https://www.instagram.com/gyanbardhan123/" title="Insta Profile">Instagram</a></p>
+            </div>
+        </span>
+        
+    
+    </footer>
+</body>
+</html>

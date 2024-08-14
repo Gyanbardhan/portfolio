@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: #444;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.project-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    padding: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.project-item:hover {
+    transform: translateY(-5px);
+}
+.project-title {
+    font-size: 1.2em;
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+.project-summary {
+    margin-bottom: 10px;
+    color: #555;
+}
+.project-details {
+    display: none;
+    color: #333;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+.toggle-btn {
+    display: block;
+    margin-top: 10px;
+    color: #0073e6;
+    font-weight: bold;
+    cursor: pointer;
+}
+.project-item.open .project-details {
+    display: block;
+}
+.project-item.open .toggle-btn::before {
+    content: "▼ ";
+}
+.toggle-btn::before {
+    content: "▶ ";
+}

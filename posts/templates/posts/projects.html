@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static "posts/projects.css" %}">
+{% endblock css %}
+
+{% block title %}
+Education
+{% endblock title %}
+{% block body %}
+<div class="container">
+    <h1>Projects</h1>
+    <div class="projects">
+        <div class="project-item" onclick="toggleDetails(this)">
+            <div class="project-title">Gemini Student</div>
+            <div class="project-summary">A multi-functional educational platform with advanced AI features.</div>
+            <div class="project-details">
+                <a href="https://github.com/Gyanbardhan/Gemini_Student" target="_blank">Github</a>
+                <a href="https://drive.google.com/file/d/1M1WT-L419ML_j43dQIyABCy8Ni79NyIq/view?usp=sharing" target="_blank">Demo</a>
+                <a href="https://huggingface.co/spaces/gyanbardhan123/Gemeni_Student" target="_blank">Web</a>
+                <p>An educational app powered by Gemini, a large language model provides 5 components a chatbot for real-time Q&A,an image & text question answerer,a general QA platform, a tool to generate MCQs with verified answers, and a system to ask questions about uploaded PDFs.</p>
+                
+            </div>
+            <span class="toggle-btn">View Details</span>
+        </div>
+
+        <div class="project-item" onclick="toggleDetails(this)">
+            <div class="project-title">MediChat</div>
+            <div class="project-summary">A Llama2 powered medical chatbot.</div>
+            <div class="project-details">
+                <a href="https://github.com/Gyanbardhan/MediChat" target="_blank">Github</a>
+                <a href="https://drive.google.com/file/d/1Z2c27T0WiH8-AycAJbTcVged6y0ng6rG/view?usp=drive_link" target="_blank">Demo</a>
+                <p>An AI-powered medical chatbot using the Llama-2-7B-Chat model for precise clinical responses. Integrates Chroma DB and all-MiniLM-L6-v2 embeddings trained on medical literature, including texts like Clinical Emergency Medicine and Gale Encyclopedia. Accurate, fast, and reliable for healthcare queries.</p>
+            </div>
+            <span class="toggle-btn">View Details</span>
+        </div>
+
+        <div class="project-item" onclick="toggleDetails(this)">
+            <div class="project-title">Duplicate Question Detection</div>
+            <div class="project-summary">NLP techniques identify duplicate questions, improving user experience and efficiency.</div>
+            <div class="project-details">
+                <a href="https://github.com/Gyanbardhan/DuplicateQuestionDetection" target="_blank">Github</a>
+                <a href="https://drive.google.com/file/d/1QNJW7xnFVKhbZMe-vDyMtamrmob9xqSA/view?usp=drive_link" target="_blank">Demo</a>
+                <a href="https://huggingface.co/spaces/gyanbardhan123/Duplicate_Question_Detection" target="_blank">Web</a>
+                
+                <p>A platform for sharing diverse knowledge often faces the challenge of managing questions that are worded in a similar way. In order to enhance user experience and easy access to high quality answers, we employ Natural Language Processing (NLP) tools to identify and remove similar questions. Specifically, we represent the text using Term Frequency-Inverse Document Frequency (TF-IDF) and Bag of Words (BoW), while a Random Forest classifier is used to detect duplicates accurately. This makes it easier for users to find relevant information quickly and effortlessly.</p>
+            </div>
+            <span class="toggle-btn">View Details</span>
+        </div>
+
+        <div class="project-item" onclick="toggleDetails(this)">
+            <div class="project-title">Plant Disease Detection</div>
+            <div class="project-summary">Transforming agriculture with AI:Utilizing top CNN models, empowering farmers with early diagnosis tools. </div>
+            <div class="project-details">
+                <a href="https://github.com/Gyanbardhan/PlantDiseaseDetection" target="_blank">Github</a>
+                <a href="https://drive.google.com/file/d/1F9M6lV-PeEJuxs4bwZ16Pd3YZBsJDL5w/view" target="_blank">Demo</a>
+                <p>The Plant Disease Detection utilizes CNN architectures, including AlexNet, VGG-16, VGG-19, ResNet, DenseNet, EfficientNet, and ConvNextLarge, leveraging deep learning and transfer learning to identify plant diseases from leaf images, fostering sustainable agriculture and food security.</p>
+            </div>
+            <span class="toggle-btn">View Details</span>
+        </div>
+
+        <div class="project-item" onclick="toggleDetails(this)">
+            <div class="project-title">Emotion Detection</div>
+            <div class="project-summary">Emotion Detection identifies emotions from facial images using deep learning.</div>
+            <div class="project-details">
+                <a href="https://github.com/Gyanbardhan/Emotion-Detection" target="_blank">Github</a>
+                <a href="https://drive.google.com/file/d/1UpN38bPQ1Ft6e8DyKhiZF_KNDY2bUjDn/view?usp=sharing" target="_blank">Demo</a>
+                <p>The Emotion Detection project leverages CNN architectures like Custom CNN, VGG16, and ResNet to identify emotions from facial images. This deep learning solution aims to enhance human-computer interaction and emotional intelligence, with applications in virtual assistants and mental health support systems.</p>
+            </div>
+            <span class="toggle-btn">View Details</span>
+        </div>
+
+        <div class="project-item" onclick="toggleDetails(this)">
+            <div class="project-title">Sentiment Analysis</div>
+            <div class="project-summary">Sentiment Analysis project uses NLP techniques to classify text sentiment accurately.</div>
+            <div class="project-details">
+                <a href="https://github.com/Gyanbardhan/Sentiment_Analysis" target="_blank">Github</a>
+                <a href="https://sentimentanalysis-dxfez4uqe4xvjdhtrkwvhw.streamlit.app/" target="_blank">Web</a>
+                
+                <p>The Sentiment Analysis project leverages NLP techniques such as Word2Vec, n-gram, and Bag of Words to accurately classify text sentiment. It includes implementation notebooks and a Streamlit web application for real-time sentiment detection.</p>
+            </div>
+            <span class="toggle-btn">View Details</span>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    function toggleDetails(element) {
+        element.classList.toggle('open');
+    }
+</script>
+{% endblock body %}

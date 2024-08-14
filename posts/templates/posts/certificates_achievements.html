@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static "posts/certificates_achievements.css" %}">
+{% endblock css %}
+
+{% block title %}
+Certificates/Achievements
+{% endblock title %}
+{% block body %}
+<div class="container">
+    <h1>Certificates & Achievements</h1>
+
+    <!-- Certificates Section -->
+    <div class="section">
+        <h2>Certificates</h2>
+        <ul class="certificates">
+            <li>
+                <div class="cert-title"><a href="{% url 'ms6' %}"><h3>Generative AI -iNeuron</h3></a></div>
+                
+                <div class="cert-date">July 2024</div>
+                <div class="cert-details">Mastered Generative AI and Large Language Models, Scored 82.35 in quizes and 100 in assignments.</div>
+            </li>
+            <li>
+                <div class="cert-title"><a href="{% url 'ms7' %}"><h3> SQL -Stanford University</h3></a></div>
+                <div class="cert-date">December 2023</div>
+                <div class="cert-details">Succesfully completed a comprehensive course on SQL using Python.</div>
+            </li>
+            
+            
+            <li>
+                <div class="cert-title"><a href="{% url 'ms9' %}"><h3>Data Analysis -Stanford University</h3></a></div>
+                <div class="cert-date">November 2023</div>
+                <div class="cert-details">Succesfully completed a course on Data Analysis and various tools related.</div>
+            </li>
+            <li>
+                <div class="cert-title"><a href="{% url 'ms8' %}"><h3>Statistics -Stanford University</h3></a></div>
+                <div class="cert-date">October 2023</div>
+                <div class="cert-details">Completed successfully Stanford University’s Coursera course on statistics equipped me with essential skills for data
+                    analysis, enhancing my statistical proficiency</div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Achievements Section -->
+    <div class="section">
+        <h2>Achievements</h2>
+        <ul class="achievements">
+            <li>
+                <div class="achieve-title"><a href="https://unstop.com/hackathons/nextgened-crafting-the-future-of-learning-solasta24-indian-institute-of-information-technology-design-and-man-867435/online-quiz/297780?utm_campaign=site-emails&utm_medium=d2c-automated&utm_source=result-out-nextgened-crafting-the-future-of-learning-indian-institute-of-information-technology-design-and-manufacturing-iiitdm-kurnool" target="_blank"><h3>NextGenEd : IIITDM,Kurool</h3></a></div>
+                <div class="achieve-details"> Secured 8th rank as a finalist.</div>
+            </li>
+            <li>
+                <div class="achieve-title"><a href="https://www.kaggle.com/competitions/observation-days/overview" target="_blank"><h3>Datapunk,Tecnovate'24 : IIIT Naya Raipur</h3></a></div>
+                <div class="achieve-details"> Scored 19th rank to build a ML Model</div>
+            </li>
+            <li>
+                <div class="achieve-title"><a href="https://leetcode.com/u/gyan_10022003/" target="_blank"><h3>Leetcode Rating: 1701</h3></a></div>
+                <div class="achieve-details">Achieved a high rating on Leetcode,solved 400+ questions on DSA and SQL demonstrating strong problem-solving skills and proficiency in algorithms and data structures.</div>
+            </li>
+            
+            <li>
+                <div class="achieve-title"><a href="https://www.codechef.com/users/gyan_15102002" target="_blank"><h3>Codechef Rating: 1620</h3></a></div>
+                <div class="achieve-details">Competative Programing</div>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+{% endblock body %}

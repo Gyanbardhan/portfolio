@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static "posts/education.css" %}">
+{% endblock css %}
+
+{% block title %}
+Education
+{% endblock title %}
+{% block body %}
+<div class="container">
+    <h1>Education</h1>
+
+    <div class="education">
+        <div class="education-item">
+            <h2>Indian Institute of Information Technology, Nagpur</h2>
+            <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+            <p>CGPA: 7.59</p>
+            <a href="{% url 'ms0' %}">Gradesheet</a>
+            <span>Relevant Coursework:</span>
+            <p>Machine Learning, Data Structures and Algorithms, Database Management Systems, Operating Systems, Object-Oriented Programming.</p>
+        </div>
+
+        <div class="education-item">
+            <h2>Chauhan Public School, Bhagalpur</h2>
+            <h3>12th Grade - PCM (Physics, Chemistry, Mathematics)</h3>
+            <p>Percentage: 95.6% (Top 5)</p>
+            <a href="{% url 'ms1' %}">Gradesheet</a>
+        </div>
+
+        <div class="education-item">
+            <h2>St. Paul's School, Bhagalpur</h2>
+            <h3>10th Grade</h3>
+            <p>Percentage: 89.17%</p>
+            <a href="{% url 'ms2' %}">Gradesheet</a>
+        </div>
+    </div>
+</div>
+{% endblock body %}
